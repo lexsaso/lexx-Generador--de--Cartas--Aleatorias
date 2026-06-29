@@ -3,3 +3,16 @@
 body{
     background: white;
 }
+/* Rotar el símbolo de la esquina inferior derecha */
+.bottom-suit {
+  transform: rotate(180deg);
+}
+
+/* Clases utilitarias para cambiar el color del texto de la carta */
+.heart, .diamond {
+  color: #dc3545; /* Rojo Bootstrap */
+}
+
+.spade, .club {
+  color: #212529; /* Negro Bootstrap */
+}
