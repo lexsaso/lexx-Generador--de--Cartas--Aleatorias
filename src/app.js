@@ -14,6 +14,7 @@ window.onload = function() {
 
     // Capturar elementos del DOM
     const cardElement = document.getElementById('card');
+    const reloadButton = document.getElementById('reload-button');
     const topSuitElement = document.querySelector('.top-suit');
     const numberElement = document.querySelector('.number');
     const bottomSuitElement = document.querySelector('.bottom-suit');
@@ -26,4 +27,9 @@ window.onload = function() {
     // Cambiar la clase para el color según el palo
     cardElement.classList.remove('heart', 'diamond', 'spade', 'club');
     cardElement.classList.add(randomSuit);
+
+    // Recargar la pagina al hacer clic en el boton
+    reloadButton.addEventListener('click', function () {
+        window.location.reload();
+    });
 };
